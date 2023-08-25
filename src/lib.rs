@@ -702,10 +702,10 @@ mod tests {
 
         if cfg!(feature = "disp_hexstring") {
             let d = "\"12:34:56:AB:CD:EF\"";
-            assert_eq!(mac, json::decode(&d).unwrap());
+            assert_eq!(mac, json::decode(d).unwrap());
         } else {
             let d = "\"12-34-56-AB-CD-EF\"";
-            assert_eq!(mac, json::decode(&d).unwrap());
+            assert_eq!(mac, json::decode(d).unwrap());
         }
     }
 

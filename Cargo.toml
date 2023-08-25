@@ -26,7 +26,6 @@ exclude = [
 
 [dependencies]
 regex = { version = "1.3.9", optional = false }
-rustc-serialize = { version = "0.3.24", optional = true }
 serde = { version = "1.0.114", optional = true }
 serde_json = { version = "1.0.56", optional = true }
 
@@ -40,6 +39,6 @@ gitlab = { repository = "abaumhauer/eui48", branch = "master" }
 appveyor = { repository = "abaumhauer/eui48", branch = "master", service = "github" }
 
 [features]
-default = ["rustc-serialize"]
+default = ["serde"]
 disp_hexstring = []
 serde_bytes = ["serde"]
